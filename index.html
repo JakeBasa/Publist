@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>Publist</title>
+	<link href="img/favicon.ico" rel="icon" type="image/x-icon">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body {
+			font-family: 'Montserrat', sans-serif;
+		}
+		
+		header {
+			height: 100vh;
+			background-image:linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(img/cover.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			background-attachment: fixed;
+   		}
+
+		@media only screen and (max-width: 600px) {
+			header {
+				height: 100%;
+				background-image:linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(img/cover.png);
+				background-size: cover;
+			}
+		}	
+		@media only screen and (min-width: 1200px) {
+			.navbar {
+				background-color: rgba(240, 248, 255, 0) !important;
+			}
+		}	
+
+		.menu {
+			color: var(--light-text-color, #FFF);
+			text-align: center;
+			font-size: 0.88rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 1.5rem;
+			letter-spacing: 0.013rem;
+		}
+
+		.titlee {
+			color: var(--light-text-color, #FFF);
+			font-style: normal;
+			font-weight: 800;
+			
+		}
+		.description {
+			color: var(--light-text-color, #FFF);
+		
+		}
+		.features-6 {
+			min-height: 100vh;
+			background:  #252B42;
+		}
+
+		@media only screen and (max-width: 600px) {
+			section {
+				height: 100%;
+				background-color:  #252B42;
+			}
+		}
+		.features-11 {
+			min-height: 100vh;
+			background: linear-gradient(#252B42 60%, #080c1b 40%);
+		}
+
+		.testimonial {
+			min-height: 100vh;
+			background:  #252B42;
+		}
+
+		@media only screen and (max-width: 600px) {
+			.features-11 {
+			min-height: 100vh;
+			background: linear-gradient(#252B42 70%, #080c1b 30%);
+		}
+		}
+		
+		.team {
+			min-height: 100vh;
+			background-color:  #252B42;
+		}
+
+		.contact {
+			min-height: 75vh;
+			background:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(img/cover-3.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			background-attachment: fixed;
+
+		}
+
+		@media only screen and (max-width: 600px) {
+			contact {
+				height: 100%;
+				background-image:linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(img/cover-3.png);
+				background-size: cover;
+				
+			}
+		}
+		
+		@media only screen and (min-width: 1200px) {
+			.contact-form {
+				max-width: 48.63rem;
+				
+			}
+		}
+
+		.consulting {
+			min-height: 25vh;
+			background: #FFF;
+		}
+
+
+		.footer {
+			min-height: 30vh;
+			background: #252B42;
+		}
+		.main-footer {
+			min-height: 55vh;
+			background: #252B42;
+		}
+
+		.last {
+			min-height: 15vh;
+			background: #17213C;
+		}
+
+		.video {
+			position: relative;
+			display:inline-block;
+		}
+
+		.play {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.img-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+		}
+		
+		.description {
+			word-wrap: break-word;
+			overflow-wrap: break-word;
+			max-width: 30rem;
+		}
+		
+		
+		
+	</style>
+</head>
+<body>
+	<!-- HEADER -->
+	<header>
+		<nav class="navbar navbar-expand-xl  navbar-dark bg-dark">
+			<div class="container pt-2">
+				<a href="#" class="navbar-brand" style="font-weight: 700;">
+					Publist
+				</a>
+				
+				<div class="ms-auto" style="height:2.1rem;">
+					<span class="d-xl-none" style="margin-right: 0.9rem;">
+						<img src="img/icn search .icn-xs.png" alt="">
+					  </span>
+					  <span class="d-xl-none" class="ms-auto">
+						<img src="img/icn shopping-cart .icn-xs.png" alt="">
+					  </span>
+				</div>
+				
+				<button
+				  class="navbar-toggler ms-2"
+				  type="button"
+				  data-bs-toggle="collapse"
+				  data-bs-target="#navbarNavDropdown"
+				  aria-controls="navbarNavDropdown"
+				  aria-expanded="false"
+				  aria-label="Toggle navigation"
+				>
+				  <span class="navbar-toggler-icon">
+					<img src="img/navbar-toggler-icon.png" alt="">
+				  </span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				  <ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+					  <a class="nav-link menu mx-2"  href="#">Home</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link  menu mx-2" href="#">Product</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link menu mx-2" href="#">Pricing</a>
+					</li> 
+					<li class="nav-item">
+						<a class="nav-link menu mx-2" href="#">Contact</a>
+					  </li>
+					<li class="nav-item d-none d-xl-block">
+					  <a class="nav-link" href="#">
+						<img src="img/icn search .icn-xs.png" alt="">
+					  </a>
+					</li>
+					<li class="nav-item d-none d-xl-block">
+					  <a class="nav-link px-3" href="#">
+						<img src="img/icn shopping-cart .icn-xs.png" alt="">
+					  </a>
+					</li>
+				  </ul>
+				</div>
+			  </div>
+		</nav>
+
+		<div class="container" style="padding-top: 3.13rem;">
+			<div class="row">
+				<div class="col align-self-center text-lg-start text-center m-lg-0 m-4">
+					<h1 class="display-2 titlee mb-4">
+						Finance and Consultancy Solution
+					</h1>
+					<h4 class="h4 description mb-4 lh-base">
+						We know how large objects will act, but things on a small scale.
+					</h4>
+					
+					<div class="row row-cols-xl-auto row-cols-1">
+						<div class="col mb-3">
+							<button type="button" class="btn btn-secondary rounded-pill fw-semibold p-2" style="font-size: 0.88rem;">Get Quote Now</button>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-light rounded-pill fw-semibold p-2" style="font-size: 0.88rem;" >Learn More</button>
+							
+						</div>
+					
+					</div>
+						
+				</div>
+				<div class="col">
+					<div class="card mx-xl-0 mx-auto  ms-xl-auto  mh-auto mb-5 p-3" style=" width: 18rem; height: auto;">
+						<div class="card-body">
+						  <h5 class="card-title text-center fw-bold mb-4">Book Appointment</h5>
+						  
+						  <div>
+							<div class="row row-cols-1">
+							<div class="col">
+								<div class="mb-3">
+									<label for="exampleFormControlInput1" class="form-label">Name&#42;</label>
+									<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Full Name" style="background-color: #f9f9f9;">
+									</div>
+							</div>
+							<div class="col">
+								<div class="mb-3">
+									<label for="exampleFormControlInput1" class="form-label">Email&#42;</label>
+									<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com" style="background-color: #f9f9f9;">
+								</div>
+							</div>
+							<div class="col">
+								<div class="mb-3">
+									<div>
+									<label for="exampleFormControlTextarea1" class="form-label">Department&#42;</label>
+									<select class="form-select" style="background-color: #f9f9f9;">
+										<option hidden>Please Select</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+										</select>
+									</div>
+								</div>
+								</div>
+							<div class="col">
+								<div class="mb-4">
+									<div>
+										<label for="exampleFormControlTextarea1" class="form-label">Time&#42;</label>
+										<select class="form-select" style="background-color: #f9f9f9;">
+											<option hidden>Please Select</option>
+											<option value="1">4:00 Available</option>
+											<option value="2">8:00 Available</option>
+											<option value="3">10:00 Available</option>
+											</select>
+										</div>
+								</div>
+							</div>
+							<div class="col">
+								<div>
+									<button type="button" class="btn form-control input-block-level btn-secondary mb-2">Book Appointment</button>
+								</div>
+								
+							</div>
+							</div>
+						
+							</div>
+					  </div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- FEATURES-6 -->
+	<section class="features-6">
+		<div class="container px-xl-0 px-5">
+			<h2 class="display-5 pt-5 text-center text-white fw-bold mb-4">Every Client Matters</h2>
+			<p class="text-center text-white mb-5 desc">
+				Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics 
+			</p>
+			<div class="row row-cols-1 row-cols-xl-3 g-4 mt-5">
+				<div class="col">
+				  <div class="card">
+					<div class="card-header" style="background-color: #D9EDFF;">
+						<div class="d-flex flex-row align-items-center">
+							<div class="m-1 m-xl-4"><img  src="img/environmental.png" alt=""></div>
+							<div class="m-1 mx-xl-2"><h5 class="h6 fw-bold">Environmental</h5></div>
+						</div>
+					</div>
+					<div class="card-body">
+					  <ul class="list-unstyled p-3">
+						<li class="mb-2">-  The best products start 
+							with Figma</li>
+						<li class="mb-2">- Design with real data</li>
+						<li class="mb-2">- Lightning fast prototyping</li>
+						<li class="mb-2">- Fastest way to organize</li>
+						<li class="mb-3">- Work at the speed of thought.</li>
+						<a href="#section" class="nav-link fw-semibold" style="color: #0D5C63">Learn More</a>
+					  </ul>
+					</div>
+				  </div>
+				</div>
+				<div class="col">
+					<div class="card">
+					  <div class="card-header" style="background-color: #D9EDFF;">
+
+						<div class="d-flex flex-row align-items-center">
+							<div class="m-1 m-xl-4"><img  src="img/same_money.png" alt=""></div>
+							<div class="m-1 mx-xl-2"><h5 class="h6 fw-bold">Save money and time</h5></div>
+						</div>
+						</div>
+					  <div class="card-body">
+						<ul class="list-unstyled p-3">
+							<li class="mb-2">-  The best products start 
+								with Figma</li>
+							<li class="mb-2">- Design with real data</li>
+							<li class="mb-2">- Lightning fast prototyping</li>
+							<li class="mb-2">- Fastest way to organize</li>
+							<li class="mb-3">- Work at the speed of thought.</li>
+							<a href="#section" class="nav-link fw-semibold" style="color: #0D5C63">Learn More</a>
+						  </ul>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card mb-5">
+					  <div class="card-header" style="background-color: #D9EDFF;">
+						<div class="d-flex flex-row align-items-center">
+							<div class="m-1 m-xl-4 every"><img  src="img/travel.png" alt=""></div>
+							<div class="m-1 mx-xl-2"><h5 class="h6 fw-bold">Travel &amp; Aviation</h5></div>
+						</div>
+						</div>
+					  <div class="card-body">
+						<ul class="list-unstyled p-3">
+							<li class="mb-2">-  The best products start 
+								with Figma</li>
+							<li class="mb-2">- Design with real data</li>
+							<li class="mb-2">- Lightning fast prototyping</li>
+							<li class="mb-2">- Fastest way to organize</li>
+							<li class="mb-3">- Work at the speed of thought.</li>
+							<a href="#section" class="nav-link fw-semibold" style="color: #0D5C63">Learn More</a>
+						  </ul>
+					  </div>
+					</div>
+				  </div>
+			  </div>
+		</div>
+	</section>
+
+	<!-- FEATURES-11 -->
+	<section class="features-11">
+		<div class="container px-xl-0 px-5">
+			<h2 class="display-5 pt-5 text-center text-white fw-bold mb-4">Who We Are</h2>
+			<p class="text-center text-white mb-5 desc">
+				Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics 
+			</p>
+			<div class="text-center mb-5">
+				<div class="video">
+					<div class="img-overlay"></div>
+					<img class ="img-fluid cover2" src="img/cover-2.jpg" alt="">
+					<img class="play img-fluid" src="img/button.button.btn.primary-color.btn-circle.btn-lg.png" alt="" style="width:3.75rem; height:3.75rem;">
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+
+	<!-- TESTIOMNIAL -->
+	<section class="testimonial">
+		<div class="container px-xl-0 px-5">
+			<h2 class="display-5 pt-5 text-center text-white fw-bold mb-4">What Clients Say</h2>
+			<p class="text-center text-white mb-5 desc">
+				Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics 
+			</p>
+			<div class="row row-cols-1 row-cols-xl-3 g-4 mt-5">
+				<div class="col">
+				  <div class="card p-4">
+					<div class="card-body">
+					  <img src="img/icn bxs-star.png" alt="">
+					  <img src="img/icn bxs-star.png" alt="">
+					  <img src="img/icn bxs-star.png" alt="">
+					  <img src="img/icn bxs-star.png" alt="">
+					  <img src="img/icn bx-star.png" alt="">
+					  <h6 class="h6  lh-base my-4">Slate helps you see how many 
+						more days you need to work to 
+						reach your financial goal.</h6>
+						<div class="d-flex flex-row" style="gap:0.94rem;">
+							<div><img  src="img/person1.png" alt="" alt=""></div>
+							<div>
+								<a class= "nav-link fw-semibold" href="#" style="color: #FF7B47">Regina Miles</a>
+								<h6 class="h6">Designer</h6>
+							</div>
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="col">
+					<div class="card  p-4">
+					  <div class="card-body">
+						<img src="img/icn bxs-star.png" alt="">
+						<img src="img/icn bxs-star.png" alt="">
+						<img src="img/icn bxs-star.png" alt="">
+						<img src="img/icn bxs-star.png" alt="">
+						<img src="img/icn bx-star.png" alt="">
+						<h6 class="h6 lh-base my-4">Slate helps you see how many 
+							more days you need to work to 
+							reach your financial goal.</h6>
+						<div class="d-flex flex-row" style="gap:0.94rem;">
+							<div><img  src="img/person2.png" alt="" alt=""></div>
+							<div>
+								<a class= "nav-link fw-semibold" href="#" style="color: #FF7B47">Regina Miles</a>
+								<h6 class="h6">Designer</h6>
+							</div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card mb-5 p-4">
+					  <div class="card-body">
+						<img src="img/icn bxs-star.png" alt="">
+						<img src="img/icn bxs-star.png" alt="">
+						<img src="img/icn bxs-star.png" alt="">
+						<img src="img/icn bxs-star.png" alt="">
+						<img src="img/icn bx-star.png" alt="">
+						<h6 class="h6 lh-base my-4">Slate helps you see how many 
+							more days you need to work to 
+							reach your financial goal.</h6>
+						<div class="d-flex flex-row" style="gap:0.94rem;">
+							<div><img  src="img/person3.png" alt="" alt=""></div>
+							<div>
+								<a class= "nav-link fw-semibold" href="#" style="color: #FF7B47">Regina Miles</a>
+								<h6 class="h6">Designer</h6>
+							</div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+			  </div>
+		</div>
+	</section>
+
+	<!-- TEAM -->
+	<section class="team">
+		<div class="container px-xl-0 px-5">
+			<h2 class="display-5 pt-5 text-center text-white fw-bold mb-4">Meet Our Team</h2>
+			<p class="text-center text-white mb-5 desc">
+				Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics 
+			</p>
+			<div class="row row-cols-1 row-cols-xl-3 g-4 mt-5">
+				<div class="col">
+				  <div class="card">
+					<img src="img/person4.png" class="card-img-top" alt="...">
+					<div class="card-body text-center">
+						<div>
+							<h5 class="h5 fw-bold">Avie Beaton</h5>
+							<h6 class="h6" style="color: #737373">Co Founder</h6>
+						</div>
+						<div>
+							<a href="https://www.facebook.com/" target="_blank"><img class ="mx-2" src="img/ant-design_facebook-filled.png" alt=""></a>
+							<a href="https://www.instagram.com/" target="_blank"><img class ="mx-2" src="img/ant-design_instagram-outlined.png" alt=""></a>
+							<a href="https://twitter.com/" target="_blank"><img class ="mx-2" src="img/ant-design_twitter-outlined.png" alt=""></a>		
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img src="img/person5.png" class="card-img-top" alt="...">
+					  <div class="card-body text-center">
+						<div>
+							<h5 class="h5 fw-bold">Ashley Fletcher</h5>
+							<h6 class="h6" style="color: #737373">CEO</h6>
+						</div>
+						<div>
+							<a href="https://www.facebook.com/" target="_blank"><img class ="mx-2" src="img/ant-design_facebook-filled.png" alt=""></a>
+							<a href="https://www.instagram.com/" target="_blank"><img class ="mx-2" src="img/ant-design_instagram-outlined.png" alt=""></a>
+							<a href="https://twitter.com/" target="_blank"><img class ="mx-2" src="img/ant-design_twitter-outlined.png" alt=""></a>		
+						</div>
+						
+					  </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card mb-5">
+					  <img src="img/person6.png" class="card-img-top" alt="...">
+					  <div class="card-body text-center">
+						<div>
+							<h5 class="h5 fw-bold">Ben Jonson</h5>
+							<h6 class="h6" style="color: #737373">Consultant</h6>
+						</div>
+						<div>
+							<a href="https://www.facebook.com/" target="_blank"><img class ="mx-2" src="img/ant-design_facebook-filled.png" alt=""></a>
+							<a href="https://www.instagram.com/" target="_blank"><img class ="mx-2" src="img/ant-design_instagram-outlined.png" alt=""></a>
+							<a href="https://twitter.com/" target="_blank"><img class ="mx-2" src="img/ant-design_twitter-outlined.png" alt=""></a>		
+						</div>
+						
+					  </div>
+					</div>
+				  </div>
+			  </div>
+		</div>
+	</section>
+
+	<!-- CONTACT -->
+	<section class="contact">
+		<div class="container px-xl-0 px-5">
+			<div class="mb-5">
+				<h6 class="h6 pt-5 pb-3 text-white">
+					Contact Us
+				</h6>
+				<h2 class="h2 text-white fw-semibold">
+					Make an Appointment
+				</h2>
+			</div>
+				<div class="contact-form">
+					<div class="row row-cols-1 row-cols-xl-2">
+					<div class="col">
+						<div class="mb-3">
+							<input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Full Name" style="background-color: #f9f9f9;">
+							</div>
+					</div>
+					<div class="col">
+						<div class="mb-3">
+							<input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="example@gmail.com" style="background-color: #f9f9f9;">
+						</div>
+					</div>
+					<div class="col">
+						<div class="mb-3">
+							<div>
+							<select class="form-select form-select-lg" style="background-color: #f9f9f9;">
+								<option hidden>Please Select</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+								</select>
+							</div>
+						</div>
+						</div>
+					<div class="col">
+						<div class="mb-3">
+							<div>
+								<select class="form-select form-select-lg" style="background-color: #f9f9f9;">
+									<option hidden>Please Select</option>
+									<option value="1">4:00 Available</option>
+									<option value="2">8:00 Available</option>
+									<option value="3">10:00 Available</option>
+									</select>
+								</div>
+						</div>
+					</div>
+					</div>
+					<div class="mb-4 col-xl-12 col-12">
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message" style="background-color: #f9f9f9;"></textarea>
+					</div>
+				
+				<div class="col-md-3">
+					<button type="button" class="btn form-control form-control-lg btn-secondary mb-5">Book Appointment</button>
+				</div>
+					</div>	
+				</div>
+
+	</section>
+
+	<!-- CONSULTING DIV -->
+	<section class="consulting">
+		<div class="container px-xl-3 pt-xl-5 px-5 pt-4">
+			<div class="row consulting-row">
+				<div class="col-xl-6 p-xl-0 p-4">
+					<h3 class="h3  mb-4 fw-semibold">
+						Consulting Agency For Your Business
+					</h3>
+					<p class=" mb-4">
+						the quick fox jumps over the lazy dog
+					</p>	
+				</div>
+				<div class="col-xl-2 mb-5 ms-auto">
+					<button type="button" class="btn btn-secondary w-100 p-3">Contact Us</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FOOTER -->
+	<footer>
+		<div class="py-4 footer">
+			<div class="container px-xl-2 pt-xl-4 px-5 pt-4">
+				<div class="row consulting-row  border-bottom border-info">
+					<div class="col-xl-6 p-xl-0 p-4">
+						<h3 class="h3  mb-4 fw-semibold text-white">
+							Publist
+						</h3>	
+					</div>
+					<div class="col-xl-2 py-3 ms-auto">
+						<div>
+							<a href="https://www.facebook.com/"><img class="mx-2" src="img/ant-design_facebook-filled (1).png" alt=""></a>
+							<a href="https://www.instagram.com/"><img class="mx-2" src="img/ant-design_instagram-outlined (1).png" alt=""></a>
+							<a href="https://twitter.com/"><img class="mx-2"  src="img/ant-design_twitter-outlined (1).png" alt=""></a>
+							<a href="https://www.youtube.com/"><img class="mx-2" src="img/carbon_logo-youtube.png" alt=""></a>
+							
+						</div>		
+					</div>	
+				</div>
+			</div>	
+		</div>
+
+		<div class="main-footer py-5">
+			<div class="container px-xl-3 pt-xl-3 px-5 pt-4">
+				<div class="row">
+					<div class="col-12 col-xl-2 col-md-6 mb-3 text-white">
+					  <h5 class="fw-semibold mb-2">Company Info</h5>
+					  <ul class="nav flex-column">
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About Us</a></li>
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Carrier</a></li>
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">We are Hiring</a></li>
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Blog</a></li>
+					  </ul>
+					</div>
+			  
+					<div class="col-12 col-xl-2 col-md-6 mb-3 text-white">
+					  <h5 class="fw-semibold mb-2">Legal</h5>
+					  <ul class="nav flex-column">
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About US</a></li>
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Carrier</a></li>
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">We are Hiring</a></li>
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Blog</a></li>
+					  </ul>
+					</div>
+			  
+					<div class="col-12 col-xl-2 col-md-6 mb-3 text-white">
+					  <h5 class="fw- mv-2">Features</h5>
+					  <ul class="nav flex-column">
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Business Marketing</a></li>
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">User Analytic</a></li>
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Live Chat</a></li>
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Unlimited Support</a></li>
+					  </ul>
+					</div>
+
+					<div class="col-12 col-xl-2  col-md-6 mb-5 text-white">
+						<h5 class="fw-semibold mb-2">Resources</h5>
+						<ul class="nav flex-column">
+						  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">IOS &amp; Android</a></li>
+						  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Watch a Demo</a></li>
+						  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Customers</a></li>
+						  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">API</a></li>
+						</ul>
+					  </div>
+					
+			  
+					<div class="col-xl-4 col-md-6 mb-3 text-white">
+					  <form>
+						<h5>Get in Touch</h5>
+						<div class="d-flex flex-column flex-sm-row w-100 gap-1 mb-2">
+						  <label for="newsletter1" class="visually-hidden">Email</label>
+						  <input id="newsletter1" type="text" class="form-control form-control-lg mb-xl-0 mb-2" placeholder="Email">
+						  <button type="button" class="btn btn-secondary">Subscribe</button>
+						  
+						</div>
+						<p class="text-secondary">Lorem impsum dolor amit</p>
+					  </form>
+					</div>
+				  </div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="last">
+		<div class="container px-xl-5 pt-xl-5  px-5 pt-4">
+			<p class="text-white text-center">Made By Jake Basa All Rights Reserved </p>
+		</div>
+		
+	  </div>
+	<!-- for nav toggler -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
