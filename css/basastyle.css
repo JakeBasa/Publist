@@ -3945,7 +3945,7 @@ fieldset:disabled .btn {
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
-  box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width);
+  box-shadow: none;
 }
 .navbar-toggler-icon {
   display: inline-block;
