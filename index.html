@@ -149,40 +149,50 @@
 				background-image:linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(img/cover.png);
 				background-size: cover;
 			}
-		}
-
-		@media only screen and (max-width: 600px) {
+			
 			.cover2 {
 				height: 30rem;
 				object-fit: cover;
 				object-position: 50% 50%;
 			}
-		}
-		
-		@media only screen and (min-width: 1200px) {
-			.navbar {
-				background-color: transparent !important;
-			}
+
 		}
 
-		@media only screen and (max-width: 600px) {
+		@media only screen and (max-width: 1024px) {
 			.borderr {
 				border-bottom: none !important;
 			}
 		}
 
+
 		@media only screen and (min-width: 1200px) {
+			.navbar {
+				background-color: transparent !important;
+			}
+
 			.contact-form {
 				max-width: 48.63rem;
 			}
 		}
 
+		@media only screen and (min-width: 1500px) {
+			.parent-icon {
+				position: relative;
+			}
+			
+			.last-icon::after {
+				position: absolute;
+				content: url(img/navbar-toggler-icon.png);
+				top: 26px;
+				right: 50px;
+			}
+		}
 	</style>
 </head>
 <body>
 	<!-- HEADER -->
 	<header>
-		<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+		<nav class="navbar navbar-expand-xl navbar-dark bg-dark parent-icon last-icon">
 			<div class="container pt-2">
 				<a href="#" class="navbar-brand px-3" style="font-weight: 700;">
 					Publist
