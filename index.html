@@ -106,6 +106,10 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
+		.cover2 {
+			width: 100%;
+			height: auto;
+		}
 
 		.img-overlay {
 			position: absolute;
@@ -143,16 +147,18 @@
 				background-size: cover;
 			}
 		}
+
+		@media only screen and (max-width: 600px) {
+			.cover2 {
+				height: 500px;
+				object-fit: cover;
+				object-position: 50% 50%;
+			}
+		}
 		
 		@media only screen and (min-width: 1200px) {
 			.navbar {
 				background-color: transparent !important;
-			}
-		}
-
-		@media only screen and (max-width: 600px) {
-			.features-11 {
-			background: linear-gradient(#252B42 70%, #080c1b 30%);
 			}
 		}
 
@@ -300,7 +306,7 @@
 							</div>
 							<div class="col">
 								<div>
-									<button type="button" class="btn form-control input-block-level btn-secondary mb-2" style="padding:0.94rem 2.5rem;">Book Appointment</button>
+									<button type="button" class="btn form-control input-block-level fw-semibold btn-secondary mb-2" style="padding:0.94rem 2.5rem;">Book Appointment</button>
 								</div>
 								
 							</div>
@@ -399,7 +405,7 @@
 			<div class="text-center mb-5">
 				<div class="video">
 					<div class="img-overlay"></div>
-					<img class ="img-fluid cover2" src="img/cover-2.jpg" alt="">
+					<img class ="cover2" src="img/cover-2.jpg" alt="">
 					<img class="play img-fluid" src="img/button.button.btn.primary-color.btn-circle.btn-lg.png" alt="" style="width:3.75rem; height:3.75rem;">
 				</div>
 				
@@ -598,7 +604,7 @@
 					</div>
 				
 				<div class="col-md-3">
-					<button type="button" class="btn form-control form-control-lg btn-secondary mb-5" style="padding: 0.94rem 1rem">Book Appointment</button>
+					<button type="button" class="btn form-control form-control-lg fw-semibold btn-secondary mb-5" style="padding: 0.94rem 1rem">Book Appointment</button>
 				</div>
 					</div>	
 				</div>
@@ -618,7 +624,7 @@
 					</p>	
 				</div>
 				<div class="col-xl-2 mb-5 ms-auto">
-					<button type="button" class="btn btn-secondary w-100 p-3">Contact Us</button>
+					<button type="button" class="btn fw-semibold btn-secondary w-100 p-3">Contact Us</button>
 				</div>
 			</div>
 		</div>
@@ -695,7 +701,7 @@
 						<h5 class="fw-semibold mb-3">Get in Touch</h5>
 							<div class="input-group mb-3">
 								<input type="text" class="form-control p-3" placeholder="Your Email">
-								<button class="btn btn-secondary px-xl-4 px-3" type="button" id="button-addon2">Subscribe</button>
+								<button class="btn fw-semibold btn-secondary px-xl-4 px-3" type="button" id="button-addon2">Subscribe</button>
 							  </div>
 	
 						<p class="text-secondary">Lorem impsum dolor amit</p>
