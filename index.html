@@ -28,6 +28,16 @@
 			background-size: cover;
    		}
 
+		.lists {
+			list-style-type: none;
+		}
+
+		.lists::before {
+			content: '\2013';
+			position: absolute;
+			margin-left: -20px;
+		}
+
 		.menu {
 			color: var(--light-text-color, #FFF);
 			text-align: center;
@@ -147,7 +157,7 @@
 
 		/* MEDIA QUERIES */
 
-		@media only screen and (max-width: 600px) {
+		@media only screen and (max-width: 1200px) {
 			header {
 				height: 100%;
 				background-image:linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(img/cover.png);
@@ -351,12 +361,12 @@
 					</div>
 					<div class="card-body">
 					  <ul class="list-unstyled p-3 listt fw-semibold">
-						<li class="mb-2">-  The best products start 
+						<li class="mb-2 lists">The best products start 
 							with Figma</li>
-						<li class="mb-2">- Design with real data</li>
-						<li class="mb-2">- Lightning fast prototyping</li>
-						<li class="mb-2">- Fastest way to organize</li>
-						<li class="mb-3">- Work at the speed of thought.</li>
+						<li class="mb-2 lists">Design with real data</li>
+						<li class="mb-2 lists">Lightning fast prototyping</li>
+						<li class="mb-2 lists">Fastest way to organize</li>
+						<li class="mb-3 lists">Work at the speed of thought.</li>
 						<a href="#section" class="nav-link fw-semibold" style="color: #0D5C63">Learn More</a>
 					  </ul>
 					</div>
@@ -373,12 +383,12 @@
 						</div>
 					  <div class="card-body">
 						<ul class="list-unstyled p-3 listt fw-semibold">
-							<li class="mb-2">-  The best products start 
+							<li class="mb-2 lists">The best products start 
 								with Figma</li>
-							<li class="mb-2">- Design with real data</li>
-							<li class="mb-2">- Lightning fast prototyping</li>
-							<li class="mb-2">- Fastest way to organize</li>
-							<li class="mb-3">- Work at the speed of thought.</li>
+							<li class="mb-2 lists">Design with real data</li>
+							<li class="mb-2 lists">Lightning fast prototyping</li>
+							<li class="mb-2 lists">Fastest way to organize</li>
+							<li class="mb-3 lists">Work at the speed of thought.</li>
 							<a href="#section" class="nav-link fw-semibold" style="color: #0D5C63">Learn More</a>
 						  </ul>
 					  </div>
@@ -394,12 +404,12 @@
 						</div>
 					  <div class="card-body">
 						<ul class="list-unstyled p-3 listt fw-semibold">
-							<li class="mb-2">-  The best products start 
+							<li class="mb-2 lists">The best products start 
 								with Figma</li>
-							<li class="mb-2">- Design with real data</li>
-							<li class="mb-2">- Lightning fast prototyping</li>
-							<li class="mb-2">- Fastest way to organize</li>
-							<li class="mb-3">- Work at the speed of thought.</li>
+							<li class="mb-2 lists">Design with real data</li>
+							<li class="mb-2 lists">Lightning fast prototyping</li>
+							<li class="mb-2 lists">Fastest way to organize</li>
+							<li class="mb-3 lists">Work at the speed of thought.</li>
 							<a href="#section" class="nav-link fw-semibold" style="color: #0D5C63">Learn More</a>
 						  </ul>
 					  </div>
