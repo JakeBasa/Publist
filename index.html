@@ -28,15 +28,6 @@
 			background-size: cover;
    		}
 
-		.lists {
-			list-style-type: none;
-		}
-
-		.lists::before {
-			content: '\2013';
-			position: absolute;
-			margin-left: -20px;
-		}
 
 		.menu {
 			color: var(--light-text-color, #FFF);
@@ -47,7 +38,7 @@
 			line-height: 1.5rem;
 			letter-spacing: 0.013rem;
 		}
-
+		
 		.titlee {
 			color: var(--light-text-color, #FFF);
 			font-style: normal;
@@ -56,13 +47,22 @@
 		}
 		.description {
 			color: var(--light-text-color, #FFF);
-		
+			
 		}
 		.features-6 {
 			min-height: 100vh;
 			background:  #252B42;
 		}
+		
+		.lists {
+			list-style-type: none;
+		}
 
+		.lists::before {
+			content: '\2013';
+			position: absolute;
+			margin-left: -15px;
+		}
 		.features-11 {
 			min-height: 100vh;
 			background: linear-gradient(#252B42 60%, #080c1b 40%);
@@ -114,13 +114,17 @@
 		.video {
 			position: relative;
 			display:inline-block;
+			
+		}
+
+		video {
+			display: block;
 		}
 
 		.play {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
+			width: 3.75rem;
+			height: 3.75rem;
+			display: block;
 		}
 
 		.cover2 {
@@ -154,6 +158,18 @@
 		.navv {
 			color: var(--muted-color, #BDBDBD) !important;
 		}
+
+		.play-button {
+			background: none;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1;
+		}
+
 
 		/* MEDIA QUERIES */
 
@@ -429,9 +445,14 @@
 			<div class="text-center mb-5">
 				<div class="video">
 					<div class="img-overlay"></div>
-					<img class ="cover2" src="img/cover-2.jpg" alt="">
-					<img class="play img-fluid" src="img/button.button.btn.primary-color.btn-circle.btn-lg.png" alt="" style="width:3.75rem; height:3.75rem;">
-				</div>				
+					<button class="play-button">
+						<img class="play img-fluid" src="img/button.button.btn.primary-color.btn-circle.btn-lg.png" alt="">
+					</button>
+					<video class="cover2" controls poster="img/cover-2.jpg">
+						<source src="https://youtu.be/uLHqpjW3aDs?si=fqgQvJn6dF7HhZ72" >
+						Your browser does not support the video tag.
+					</video>
+				</div>			
 			</div>			
 		</div>
 	</section>
